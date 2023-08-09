@@ -48,7 +48,7 @@ def load_model(model_path):
 # run inference using the onnx model
 def predict(image, ort_session, input_tensor):
 
-    global conf_thresold
+    
 
     model_inputs = ort_session.get_inputs()
     input_names = [model_inputs[i].name for i in range(len(model_inputs))]
